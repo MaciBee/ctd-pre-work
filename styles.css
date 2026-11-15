@@ -1,0 +1,36 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: #7AB1E8;
+    color: #253238;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    background: #2e9e4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  input {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  #messageId {
+    width: 600px;
+    max-width: 90%;
+    min-height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    overflow-wrap: break-word;
+  }
