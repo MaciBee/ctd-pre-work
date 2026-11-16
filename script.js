@@ -1,3 +1,9 @@
+//get api for weather and geoloation and display the current weather and cloud coverage
+//note: spliting the code into two seperate html files (index.html and cloud.html) caused error in loading cloud coverage
+//attempts to add seperate if conditions (bottom of script page) did not resolve the problem. The structure needs to be re-evaluated as it 
+//was designed for scripts to load in one page only
+//fix need for async function getCloud() 
+
     const location = document.getElementById("cityId")
     const button = document.getElementById("buttonId")
     const paragraph = document.getElementById("messageId")
@@ -56,8 +62,9 @@
   }
 }
 
-    button.addEventListener("click", lookUp)
 
+
+button.addEventListener("click", lookUp)
    
   async function getCloud() {
 
@@ -109,5 +116,13 @@
 
     cloud.addEventListener("click", getCloud)
 
+//different attempt to gets cloud to respond. Breaking the site in two caused error. 
 
+//if (button) {
+  //button.addEventListener("click", lookUp);
+//}
+
+//if (cloud) {
+//  cloud.addEventListener("click", getCloud);
+//}
     
