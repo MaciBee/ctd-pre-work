@@ -7,7 +7,8 @@ Features
 
 Search for any city by name
 See Weather: shows the current temperature in both Celsius and Fahrenheit.
-See Cloud: shows the current cloud coverage.
+A seperate page to see Cloud: shows the current cloud coverage.
+A way to go back and forth from each site. 
 Each button handles its own error, checking and displays various messages depending on the error status instead of crashing silently.
 
 How it works
@@ -46,6 +47,7 @@ script.js - fetch data from API and displays it on page
 
 
 Future improvements:
+Cloud coverage does not reliably display. After splitting index.html to have seperate page, it caused conflicts
+Clean up async function getCloud() 
 Create one function instead of repeating code. 
 Improve CSS and styling for better experience.
-Use IP address to automatically detect persons location and display weather
